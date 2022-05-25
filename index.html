@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body cz-shortcut-listen="true">
+    <header>
+    	<h1>EDAD DE TU PERRO</h1>
+    </header>
+    <section class="cal">
+        <br><br>
+        <input type="number" id="n1">
+        
+        <button class="button" id="btn1">CON 7</button>
+        <button class="button" id="btn2">CON LOG</button>
+        
+		<br><br>
+                <h2>
+
+                    <div id="resultado"></div>
+                    <br>
+                    <img src="1.jpg" width="1100" height="500">
+                    <p>TOMMY</p>
+
+                    <script>
+                        
+                        var b = document.getElementById('btn1');
+                        b.addEventListener('click', siete);
+
+                        function siete() {
+                            var nr1 = parseInt(document.getElementById('n1').value);
+
+                            var s = nr1 * 7;
+                            document.getElementById("resultado").innerHTML = "TOMMY TIENE: " + s + " años humanos"
+                        }
+                        
+                        var r = document.getElementById('btn2');
+                        r.addEventListener('click', lnm);
+
+                        function lnm() {
+                            var nr1 = parseInt(document.getElementById('n1').value);
+                            
+                            let s = 16 * Math.log(nr1) + 31;
+
+                            document.getElementById("resultado").innerHTML = "TOMMY TIENE: " + s.toFixed(0) + " años humanos"
+                        }
+                    </script>
+			</h2>
+	</section>
+</body>
+</html>

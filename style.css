@@ -1,0 +1,28 @@
+body{
+	background-color: lightcyan;
+}
+
+header{
+	text-align: center;
+	background-color: black;
+	color: white;
+	border-radius: 30px;
+}
+
+.cal{
+	text-align: center;
+}
+
+img{
+	border-radius: 30px;
+}
+
+button{
+	color: white;
+	background-color: black;
+	border-radius: 10px;
+}
+
+p{
+	font-family: sans-serif;
+}
